@@ -44,7 +44,7 @@ function App() {
             <span className="hero-tag">Psicóloga Clínica · Universidad Mayor</span>
             <h1>
               Hola, soy<br />
-              <em>Javiera</em> <span className="hero-aside">(la de la izq)</span>
+              <em>Javiera</em>
             </h1>
             <p>
               Te acompaño a descubrir nuevas formas de relacionarte contigo
@@ -54,17 +54,29 @@ function App() {
               <a href="#contacto" className="btn btn--primary">Agenda tu primera sesión</a>
               <a href="#sobre-mi" className="btn btn--ghost">Conóceme →</a>
             </div>
-          </div>
-          <div className="hero-visual">
-            <div className="hero-card">
-              <div className="hero-card-inner">
-                <img src="/images/javi.jpeg" alt="Javiera, Psicóloga Clínica" className="hero-card-img" />
-                <div className="hero-card-detail">
-                  <span>Magíster en Terapia Familiar</span>
-                  <span>Enfoque Sistémico Constructivista</span>
-                </div>
+            <div className="hero-stats-bar">
+              <div className="hero-stat">
+                <span className="hero-stat-number">+500</span>
+                <span className="hero-stat-label">Pacientes atendidos</span>
+              </div>
+              <div className="hero-stat-divider" />
+              <div className="hero-stat">
+                <span className="hero-stat-number">Adultos</span>
+                <span className="hero-stat-label">e Infanto Juveniles</span>
+              </div>
+              <div className="hero-stat-divider" />
+              <div className="hero-stat">
+                <span className="hero-stat-number">Sistémico</span>
+                <span className="hero-stat-label">Constructivista</span>
               </div>
             </div>
+          </div>
+          <div className="hero-photo">
+            <div className="hero-photo-frame">
+              <img src="/images/javi_2.jpeg" alt="Javiera, Psicóloga Clínica" />
+            </div>
+            <div className="hero-photo-accent" />
+            <div className="hero-photo-ring" />
           </div>
         </div>
         <div className="hero-scroll">
@@ -79,7 +91,6 @@ function App() {
           <div className="about-col about-col--img">
             <div className="about-portrait">
               <img src="/images/javi.jpeg" alt="Javiera, Psicóloga Clínica" />
-              <span className="about-portrait-caption">Hola, soy Javiera (la de la izq)</span>
             </div>
             <div className="about-accent" />
           </div>
