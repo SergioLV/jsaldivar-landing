@@ -44,7 +44,7 @@ function App() {
             <span className="hero-tag">Psicóloga Clínica · Universidad Mayor</span>
             <h1>
               Hola, soy<br />
-              <em>Javiera</em>
+              <em>Javiera</em> <span className="hero-aside">(la de la izq)</span>
             </h1>
             <p>
               Te acompaño a descubrir nuevas formas de relacionarte contigo
@@ -58,7 +58,7 @@ function App() {
           <div className="hero-visual">
             <div className="hero-card">
               <div className="hero-card-inner">
-                <span className="hero-card-initial">J</span>
+                <img src="/images/javi.jpeg" alt="Javiera, Psicóloga Clínica" className="hero-card-img" />
                 <div className="hero-card-detail">
                   <span>Magíster en Terapia Familiar</span>
                   <span>Enfoque Sistémico Constructivista</span>
@@ -78,7 +78,8 @@ function App() {
         <Section className="about-inner">
           <div className="about-col about-col--img">
             <div className="about-portrait">
-              <span>J</span>
+              <img src="/images/javi.jpeg" alt="Javiera, Psicóloga Clínica" />
+              <span className="about-portrait-caption">Hola, soy Javiera (la de la izq)</span>
             </div>
             <div className="about-accent" />
           </div>
