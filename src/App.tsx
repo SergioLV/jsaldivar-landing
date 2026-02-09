@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import './App.css'
 
 function useScrollReveal() {
@@ -30,6 +31,7 @@ function App() {
         <div className="nav-links">
           <a href="#sobre-mi">Sobre mí</a>
           <a href="#servicios">Servicios</a>
+          <a href="#valores">Valores</a>
           <a href="#enfoque">Enfoque</a>
           <a href="#contacto" className="nav-cta">Conversemos</a>
         </div>
@@ -169,6 +171,90 @@ function App() {
               <div className="svc-line" />
             </article>
           </div>
+        </Section>
+      </section>
+
+      {/* ── PRICING ── */}
+      <section className="pricing" id="valores">
+        <Section className="pricing-inner">
+          <span className="label">Valores</span>
+          <h2>Elige tu <em>plan</em></h2>
+          <p className="pricing-subtitle">
+            Todas las sesiones tienen una duración de 1 hora. Modalidad online o presencial.
+          </p>
+          <div className="pricing-grid">
+            <article className="price-card">
+              <div className="price-card-header">
+                <h3>Sesión Individual</h3>
+                <span className="price-badge">Ideal para empezar</span>
+              </div>
+              <div className="price-amount">
+                <span className="price-currency">$</span>
+                <span className="price-value">30.000</span>
+                <span className="price-period">/ sesión</span>
+              </div>
+              <ul className="price-features">
+                <li>1 hora de sesión</li>
+                <li>Online o presencial</li>
+                <li>Individual, pareja o familiar</li>
+                <li>Sin compromiso de continuidad</li>
+              </ul>
+              <Link to="/pago/sesion-individual" className="price-btn">
+                Agendar sesión
+              </Link>
+            </article>
+
+            <article className="price-card price-card--featured">
+              <div className="price-card-popular">Más elegido</div>
+              <div className="price-card-header">
+                <h3>Pack 4 Sesiones</h3>
+                <span className="price-badge">Ahorra 10%</span>
+              </div>
+              <div className="price-amount">
+                <span className="price-currency">$</span>
+                <span className="price-value">108.000</span>
+                <span className="price-period">/ 4 sesiones</span>
+              </div>
+              <div className="price-per-session">$27.000 por sesión</div>
+              <ul className="price-features">
+                <li>4 sesiones de 1 hora</li>
+                <li>Online o presencial</li>
+                <li>Individual, pareja o familiar</li>
+                <li>Agendar según tu disponibilidad</li>
+                <li>Seguimiento personalizado</li>
+              </ul>
+              <Link to="/pago/pack-4" className="price-btn price-btn--featured">
+                Elegir pack
+              </Link>
+            </article>
+
+            <article className="price-card">
+              <div className="price-card-header">
+                <h3>Pack 8 Sesiones</h3>
+                <span className="price-badge">Ahorra 15%</span>
+              </div>
+              <div className="price-amount">
+                <span className="price-currency">$</span>
+                <span className="price-value">204.000</span>
+                <span className="price-period">/ 8 sesiones</span>
+              </div>
+              <div className="price-per-session">$25.500 por sesión</div>
+              <ul className="price-features">
+                <li>8 sesiones de 1 hora</li>
+                <li>Online o presencial</li>
+                <li>Individual, pareja o familiar</li>
+                <li>Agendar según tu disponibilidad</li>
+                <li>Seguimiento personalizado</li>
+                <li>Proceso terapéutico completo</li>
+              </ul>
+              <Link to="/pago/pack-8" className="price-btn">
+                Elegir pack
+              </Link>
+            </article>
+          </div>
+          <p className="pricing-note">
+            Valores en pesos chilenos (CLP). El pago se realiza previo a la sesión vía transferencia bancaria.
+          </p>
         </Section>
       </section>
 
